@@ -35,8 +35,18 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-def one(input1, input2):
-	return ""
+def one(line1, line2):
+    len1 = len(line1)
+    len2 = len(line2)
+    if len1 > len2:
+        return line1
+		
+    elif len2 > len1:
+        return line2
+
+    else:
+        return(line1 + " " + line2)
+		
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
